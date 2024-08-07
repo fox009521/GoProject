@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("uninit :" , s, s == nil, len(s) == 0)
 
 	s = make([]string, 3)
-	fmt.Println("emp:", s, "len", len(s)， "cap:", cap(s))
+	fmt.Println("emp:", s, "len", len(s), "cap:", cap(s))
 
 	s[0] = "a"
 	s[1] = "b"
@@ -31,10 +31,10 @@ func main() {
 	l := s[2:5]
 	fmt.Println("sl1:", l)
 
-	l:= s[:5]
+	l =  s[:5]
 	fmt.Println("sl2:", l)
 
-	l := s[2:]
+	l = s[2:]
 	fmt.Println("sl3:", l)
 
 	t := []string{"g", "h", "i"}
